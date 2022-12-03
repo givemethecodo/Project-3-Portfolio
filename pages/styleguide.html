@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika Hance | Style Guide</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <script src="../scripts/main.js"></script>
+
+  </head>
+
+<body>
+
+    <nav>
+      <div class="navbar">
+          <a class="nav-links" href="../index.html">Home</a>
+          <a class="nav-links" href="about.html">About</a>
+          <!-- <a class="nav-links" href="pages/projects.html">Projects</a> -->
+      </div>
+    </nav>
+
+    <!-- TYPOGRAPHY SECTION // -->
+  <section id="typography" class="style-guide-category">
+    <h2>Typography</h2>
+    <section class="style-guide-element">
+      <h3 class="align-center">Type Scale</h3>
+
+      <div class="container center-vertical">
+        <div class="block align-left">
+          <h1>This is my H1</h1>
+          <p>Sample code:</p>
+          <code>&lt;h1&gt;This is my H1&lt;/h1&gt;</code>
+        </div>
+        <div class="block align-center">
+          <p>32px, 2em</p>
+        </div>
+      </div>
+      <div class="container center-vertical">
+        <div class="block">
+          <h2>This is my H2</h2>
+          <p>Sample code:</p>
+          <code>&lt;h2&gt;This is my H2&lt;/h2&gt;</code>
+        </div>
+        <div class="block align-center">
+          <p>24px, 1.5em</p>
+        </div>
+      </div>
+      <div class="container center-vertical">
+        <div class="block">
+          <h3>This is my H3</h3>
+          <p>Sample code:</p>
+          <code>&lt;h3&gt;This is my H3&lt;/h3&gt;</code>
+        </div>
+        <div class="block align-center">
+          <p>16px, 1em</p>
+        </div>
+      </div>
+      <div class="container center-vertical">
+        <div class="block">
+          <p>This is my body copy</p>
+          <p>Sample code:</p>
+          <code>&lt;p&gt;This is my body copy&lt;/p&gt;</code>
+        </div>
+        <div class="block align-center">
+          <p>16px, 1em</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements" class="style-guide-category">
+    <h2> Interactive elements</h2>
+    <section class="style-guide-element">
+      <h3 class="align-center">Buttons</h3>
+      <!--referenced from w3 schools, submit and reset button
+      https://www.w3schools.com/html/html_form_input_types.asp-->
+
+      <div class="container">
+        <div class="block align-center">
+          <h3>Primary Button</h3>
+          <button class="button button-primary">PRIMARY</button>
+          <p>Sample code:</p>
+          <code>&lt;button class="button button-primary"&gt;PRIMARY&lt;/button&gt;</code>
+        </div>
+        <div class="block align-center">
+          <h3>Secondary Button</h3>
+          <button class="button button-secondary">SECONDARY</button>
+          <p>Sample code:</p>
+          <code>&lt;button class="button button-secondary"&gt;SECONDARY&lt;/button&gt;</code>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="style-guide-element">
+      <h3 class="align-center">In-text link</h3>
+      <a href="" class="active-link">
+        click on this it's an inline link
+      </a>
+      <p>Sample code:</p>
+      <code>&lt;a href="" class="active-link"&gt;click on this it's an inline link&lt;/a&gt;</code>
+    </section>
+
+    <section class="style-guide-element">
+      <h3 class="align-center">Image as a link</h3>
+      <div class = "column image-link-column">
+        <div class = "image-link-block" >
+          <a href="">
+            <img src="../img/ragged_edges.gif"
+                 alt="edge tile" class="image-link-border image-as-link">
+          </a>
+        </div>
+        </div>
+      <p>Sample code:</p>
+      <code>&lt;a href=""&gt;
+        <br>&lt;img src="../img/ragged_edges.gif"
+        <br>alt="edge tile"
+        <br>&lt;/a&gt;
+      </code>
+    </section>
+
+    <section class="style-guide-element">
+      <h3 class="align-center">Text input field</h3>
+          <label class="checkout-form-field" for="Name">
+              <span class="checkout-form-field-label">Name</span>
+              <input type="text" id="Name" name="Name" class="checkout-form-field-input" required>
+          </label>
+      <p>Sample code:</p>
+      <code>&lt;label for="username"&gt;Username&lt;/label&gt;</code>
+      <code>&lt;input type="text" id="username" class="field-input"&gt;</code>
+    </section>
+    <section class="style-guide-element">
+      <h3 class="align-center">Radio button input field</h3>
+      <input class="radio" type="radio" id="black" name="radio-color">
+      <label class="radio" for="black">black</label>
+      <input class="radio" type="radio" id="blue" name="radio-color">
+      <label class="radio" for="blue">blue</label>
+      <p>Sample code:</p>
+      <code>&lt;input class="radio" type="radio" id="black" name="radio-color"&gt;</code>
+      <code>&lt;label class="radio" for="black"&gt;black&lt;/label&gt;</code>
+    </section>
+  </section>
+
+  <section id="text_elements" class="style-guide-category">
+    <h2>Text Elements</h2>
+    <section class="style-guide-element">
+      <h3 class="align-center">Paragraphs</h3>
+      <p>This is a paragraph. It's very short but it could be long. I can write
+        so much here when I feel like it but right now I don't need to.
+        Hello! Secondary editor of the Stylesheet here! I'm adding on
+        to the paragraph because it's probably best for the pararaph to look like
+        a paragraph. This is the paragraph text that will appear throughout the website.
+        How do you like it? It will be heavily integrated within the website
+        because everyone likes reading? Right? Right?</p>
+
+      <p>Sample code:</p>
+      <code>&lt;p&gt;This is a paragraph...&lt;/p&gt;</code>
+    </section>
+
+     <section class="style-guide-element">
+      <h2>Bulleted Lists</h2>
+      <ul>
+        <li>Glass</li>
+        <li>Teracotta</li>
+        <li>Ceramic</li>
+      </ul>
+      <p>Sample code:</p>
+      <code>&lt;ul&gt;
+        <br>&lt;li&gt;Glass&lt;/li&gt;
+        <br>&lt;li&gt;Teracotta&lt;/li&gt;
+        <br>&lt;li&gt;Ceramic&lt;/li&gt;
+        <br>&lt;/ul&gt;
+      </code>
+    </section>
+    <section class="style-guide-element">
+      <h2>Numbered Lists</h2>
+      <ol>
+        <li>Glass</li>
+        <li>Teracotta</li>
+        <li>Ceramic</li>
+      </ol>
+      <p>Sample code:</p>
+      <code>&lt;ol&gt;
+        <br>&lt;li&gt;Glass&lt;/li&gt;
+        <br>&lt;li&gt;Teracotta&lt;/li&gt;
+        <br>&lt;li&gt;Ceramic&lt;/li&gt;
+        <br>&lt;/ol&gt;
+      </code>
+    </section>
+    </section>
+
+<footer>
+  <div class="footer-column">
+    <h3>Resources</h3>
+    <a href="styleguide.html" class="active-link">Style Guide</a>
+    <a href="https://github.com/givemethecodo/Project-3-Portfolio" class="active-link">Github</a>
+    <a href="references.html" class="active-link">References</a>
+  </div>
+</footer>
+</body>
