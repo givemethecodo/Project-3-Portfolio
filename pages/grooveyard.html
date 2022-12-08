@@ -5,56 +5,166 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erika Hance | Grooveyard</title>
+    <title>Erika Hance | Home</title>
 
     <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
     <script src="../scripts/main.js"></script>
 
   </head>
 
 <body>
 
-    <nav>
-      <div class="navbar">
-          <a class="nav-links" href="../index.html">Home</a>
-          <a class="nav-links" href="about.html">About</a>
-          <!-- <a class="nav-links" href="pages/projects.html">Projects</a> -->
+  <nav>
+    <div class="navbar">
+        <a class="nav-links" href="../index.html"><img class="logo" src="../img/logo.png" alt="Erika Hance Portfolio Logo"></a>
+        <a class="nav-links" href="about.html">about</a>
+        <div class="subnav">
+          <!-- ref: https://www.sitepoint.com/community/t/skip-navigation-problem-with-tabbing/214274/6 -->
+          <!-- ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex -->
+          <a class="nav-links subnavbtn" tabindex="0">projects <i class="fa fa-caret-down"></i></a>
+            <div class="subnav-content">
+              <a class="nav-links" href="lamp.html">LAMP!: character design</a>
+              <a class="nav-links" href="grooveyard.html">Grooveyard: tileset creation</a>
+            </div>
+        </div>
+        <a class="nav-links" href="gallery.html">gallery</a>
+    </div>
+  </nav>
+
+  <article>
+
+    <div class="container-small">
+      <a class="space-between" href="https://guavagoosegames.itch.io/grooveyard">
+        <img src="../img/grooveyard-header-big.png" alt="Grooveyard Header" class="header">
+      </a>
+    </div>
+
+    <section class="container column">
+      <div class="row space-ontop">
+        <h2>Grooveyard: Creating ‘Dance World’ Tiles</h2>
       </div>
-    </nav>
+      <div class="row">
+        <p class="space-between">
+          Grooveyard is a pixel-art puzzle game in development. It was originally part of the 2020 GMTK Game Jam hosted yearly on itch.io and the game earned 10th place overall. Due to the success, GuavaGoose Games decided to pursue a finished version of the game. I was brought on the team in Summer of 2022 to be an asset artist, and now in Fall 2022, I am currently the lead pixel artist.
+        </p>
+        <p class="space-between">
+          Grooveyard features skeletons and various graveyard-themed locations. One of these locations is ‘Dance Wold’, named for the dance theme that the levels in this location (or “world”) has. Here are the assets I created for the world and the rough world concept.
+        </p>
+        <p class="space-between">
+          Sidenote: ‘Dance World’ is the final world of the game featuring the unique concepts from all the other worlds combined to make intricate puzzles. This is why there are some elements that seem more cave-like than party-like.
+        </p>
+      </div>
 
-<section class="container">
-  <div class="space-ontop">
-    <h1>About</h1>
-    <p>Erika Hance</p>
-    <img src="../img/profpic.jpg" alt="Picture of Erika" class="">
-    <p>I am an Indigenous-Canadian freelance illustrator and game artist based in Vancouver, British Columbia.
-      I have a fondness for crafting cute and colourful visual identities, especially while designing characters.
-    </p>
-    <p>
-      Cute designs have more power than we give them credit for: they bring positivity to their viewers and they
-      make brands more approachable and memorable. I am a firm believer that design should inspire strong emotions.
-      After all, designing is a human-centric craft. Since spreading joy is my passion, I use my proficiency in
-      Clip Studio Paint, Paint Tool SAI, Procreate, Pixaki and Adobe Suite Software to create cute designs that do just that.
-      I am also familiar with HTML, CSS, JavaScript, and Python. I have worked on titles like Grooveyard (not yet released),
-      and many individual projects.
-    </p>
-  </div>
-</section>
+      <div class="row">
+        <img src="../img/dance-world.png" alt="Our Original Dance World concept art" class="space-between large-image">
+        <img src="../img/dance-world-items1.png" alt="Dance world items" class="space-between large-image">
+        <img src="../img/dance-world-items2.png" alt="Dance world items" class="space-between large-image">
+      </div>
 
-<h2>Check out my work</h2>
-<section class="container">
-  <a class="nav-links" href="lamp.html">LAMP!: Character Design</a>
-</section>
-<section class="container">
-  <a class="nav-links" href="grooveyard.html">Grooveyard: Tileset</a>
-</section>
+      <div class="row">
+        <img src="../img/keydoorTilesOutline.gif" alt="Tile gif" class="space-between large-image">
+        <p class="space-between">
+          Around this time, the lead artist who usually makes the tiles took a step back on the project to focus on career work. This left me, the other artist, to learn how to make tiles. As I have not done this for the project, I looked at the format of the other tiles of the other worlds first. Our project requires pixel-perfect lines and a limited colour palette to work with the shaders in Unity. I had access to 5 colours and needed to make a pixel-perfect 16x16 tile that could stack up in various ways.
+        </p>
+        <img src="../img/keydoorTilesOutline.gif" alt="Tile gif" class="space-between large-image">
+      </div>
 
-<footer>
-  <div class="footer-column">
-    <h3>Resources</h3>
-    <a href="styleguide.html" class="active-link">Style Guide</a>
-    <a href="https://github.com/givemethecodo/Project-3-Portfolio" class="active-link">Github</a>
-    <a href="references.html" class="active-link">References</a>
-  </div>
-</footer>
+      <div class="row">
+        <p class="space-between">
+          I thought about what ‘Dance World’ tiles would even look like. Most dance floors that I know of have plain, wooden tiles. It seems that the party is in the lighting, not the floor. I thought about using metal girders in some way. However, because the tile is an even number, I found it hard to make a pixel-perfect ‘x’ with a symmetrical design and moved on from the idea.
+        </p>
+        <img src="../img/girder.png" alt="Dance world items" class="space-between large-image">
+        <img src="../img/girder2.png" alt="Dance world items" class="space-between large-image">
+      </div>
+
+      <div class="row">
+        <p class="space-between">
+          Then I decided to try incorporating the lights into the flooring. After all, if the tiles need to represent a party, wooden floors and metal girders are not exciting enough. I animated the lights in different patterns to see how the team would react.
+        </p>
+        <img src="../img/tile1.gif" alt="First attempt at dance tile" class="space-between large-image">
+        <img src="../img/tile2.gif" alt="Second attempt at dance tile" class="space-between large-image">
+      </div>
+
+      <div class="row">
+        <p class="space-between">
+          The slower lights moving in one direction seemed to be the fan favourite. It was the least distracting, while also being the most reminiscent of a dance party.
+        </p>
+        <img src="../img/tile3.gif" alt="Third attempt at dance tile" class="space-between large-image">
+        <img src="../img/tile4.gif" alt="Fourth attempt at dance tile" class="space-between large-image">
+      </div>
+
+      <div class="row">
+        <img src="../img/ragged_edges.gif" alt="Fifth attempt at dance tile" class="space-between large-image">
+        <p class="space-between">
+          I made a mock-up with more lights and jagged edges to fit in with the rest of our tiles. After all, the setting is more or less a mausoleum in a graveyard so most everything is decrepit. The extra lighting made the tile look more complete so that stayed, but the edges needed work.
+        </p>
+        <p class="space-between">
+          I was told by the other artist on the team to make the edges uniform. After trying it, I did not like the result. But all of us on the team agreed that the edges should probably have a pattern, just maybe with a reduced frequency.
+        </p>
+        <img src="../img/feedback.png" alt="feedback for dance tile" class="space-between large-image">
+      </div>
+
+      <div class="row">
+        <p class="space-between">
+          Here's all the iterations of trying out different edges:
+        </p>
+        <img src="../img/floor1.gif" alt="Another attempt at dance tile" class="space-between large-image">
+        <img src="../img/floor2.gif" alt="Another attempt at dance tile" class="space-between large-image">
+        <img src="../img/floor3.gif" alt="Another attempt at dance tile" class="space-between large-image">
+      </div>
+
+      <div class="row">
+        <img src="../img/floor4.gif" alt="Another attempt at dance tile" class="space-between large-image">
+        <img src="../img/floor5.gif" alt="Another attempt at dance tile" class="space-between large-image">
+        <img src="../img/floor6.gif" alt="Another attempt at dance tile" class="space-between large-image">
+        <img src="../img/floor7.gif" alt="Another attempt at dance tile" class="space-between large-image">
+      </div>
+
+      <div class="row">
+        <p class="space-between">
+          The programming lead and project lead brought it into the game as a tile. The animation did not seem to work, but it turned out that I was given the wrong colours and the shader was not working properly. In pixel art programs, they give you an easy option to swap out colours so I quickly changed the greys and the tile worked.
+        </p>
+        <img src="../img/finished-tileset.gif" alt="Another attempt at dance tile" class="space-between large-image">
+        <p class="space-between">
+          Limitations, such as being brought in part-way into a project and having a smaller crew, can be solved with dedicated learning.
+          Additionally, when learning new skills taking feedback is important. This means a lot of iteration, but the end result is worth it.
+        </p>
+      </div>
+
+    </section>
+
+
+    <div class="projects-container">
+      <div class="projects-container-row">
+        <h1>check out my project work</h1>
+      </div>
+      <div class="projects-container-row">
+        <div class="figure">
+          <a href="lamp.html">
+            <img class="image-main projects-container-item" src="../img/lamp-tile.png" srcset="../img/lamp-tile.png" alt="LAMP!: Character Design">
+            <img class="image-hover projects-container-item" src="../img/lamp-tile-hover.png" srcset="../img/lamp-tile-hover.png" alt="LAMP!: Character Design on hover">
+          </a>
+        </div>
+        <div class="figure">
+          <a href="grooveyard.html">
+            <img class="image-main projects-container-item" src="../img/grooveyard-tile.png" srcset="../img/grooveyard-tile.png" alt="Grooveyard: Tileset">
+            <img class="image-hover projects-container-item" src="../img/grooveyard-tile-hover.png" srcset="../img/grooveyard-tile-hover.png" alt="Grooveyard: Tileset on hover">
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <div class="footer">
+      <a href="https://www.instagram.com/qootea/" class="active-link">instagram</a>
+      <a href="https://qootea.itch.io/" class="active-link">itch.io</a>
+      <a href="https://github.com/givemethecodo/Project-3-Portfolio" class="active-link">github</a>
+      <a href="styleguide.html" class="active-link">style guide</a>
+      <a href="references.html" class="active-link">references</a>
+    </div>
+  </footer>
+
 </body>

@@ -5,65 +5,121 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erika Hance | LAMP!</title>
+    <title>Erika Hance | Home</title>
 
     <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
     <script src="../scripts/main.js"></script>
 
   </head>
 
 <body>
 
-    <nav>
-      <div class="navbar">
-          <a class="nav-links" href="../index.html">Home</a>
-          <a class="nav-links" href="about.html">About</a>
-          <!-- <a class="nav-links" href="pages/projects.html">Projects</a> -->
+  <nav>
+    <div class="navbar">
+        <a class="nav-links" href="../index.html"><img class="logo" src="../img/logo.png" alt="Erika Hance Portfolio Logo"></a>
+        <a class="nav-links" href="about.html">about</a>
+        <div class="subnav">
+          <!-- ref: https://www.sitepoint.com/community/t/skip-navigation-problem-with-tabbing/214274/6 -->
+          <!-- ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex -->
+          <a class="nav-links subnavbtn" tabindex="0">projects <i class="fa fa-caret-down"></i></a>
+            <div class="subnav-content">
+              <a class="nav-links" href="lamp.html">LAMP!: character design</a>
+              <a class="nav-links" href="grooveyard.html">Grooveyard: tileset creation</a>
+            </div>
+        </div>
+        <a class="nav-links" href="gallery.html">gallery</a>
+    </div>
+  </nav>
+
+  <article>
+
+    <section class="container column">
+      <div class="row space-ontop">
+        <h2>LAMP!: Designing ‘Moth-thew’</h2>
       </div>
-    </nav>
+      <div class="row">
+        <p class="space-between">
+          “LAMP!” is an endless obstacle-dodging Unity game that I made in a team. It features a moth,
+          who dodges rainfall and other obstacles to reach his goal: the light of a lamp. We defined our
+          target audience as young, casual players who like to explore and fantasise. The project task
+          was to redesign a very rudimentary game within three iterations. I was the art lead and sole illustrator.
+        </p>
+        <p class="space-between">
+          The problems with the original were endless: the game was coded with many errors,
+          the gameplay was too repetitive and simple, and the graphics were unappealing. However, as the illustrator of the game,
+          I was mostly focused on the graphics. In particular the design of the main enemy: the original enemy graphics featured
+          realistic depictions of an antlion.
+         </p>
+        <img src="../img/original-antlion.png" alt="Original Antlion" class="space-between large-image">
+      </div>
 
-<section class="container">
-  <div class="space-ontop">
-    <h1>LAMP!: Designing ‘Moth-thew’</h1>
-    <p>“LAMP!” is an endless obstacle-dodging Unity game that I made in a team. It features a moth,
-      who dodges rainfall and other obstacles to reach his goal: the light of a lamp. We defined our
-       target audience as young, casual players who like to explore and fantasise. The project task
-       was to redesign a very rudimentary game within three iterations. I was the art lead and sole illustrator.
-    </p>
-    <p>The problems with the original were endless: the game was coded with many errors,
-      the gameplay was too repetitive and simple, and the graphics were unappealing. However, as the illustrator of the game,
-       I was mostly focused on the graphics. In particular the design of the main enemy: the original enemy graphics featured
-       realistic depictions of an antlion.
-     </p>
-    <img src="../img/" alt="Original Antlion" class="">
-    <p>I am an Indigenous-Canadian freelance illustrator and game artist based in Vancouver, British Columbia.
-      I have a fondness for crafting cute and colourful visual identities, especially while designing characters.
-    </p>
-    <p>
-      Cute designs have more power than we give them credit for: they bring positivity to their viewers and they
-      make brands more approachable and memorable. I am a firm believer that design should inspire strong emotions.
-      After all, designing is a human-centric craft. Since spreading joy is my passion, I use my proficiency in
-      Clip Studio Paint, Paint Tool SAI, Procreate, Pixaki and Adobe Suite Software to create cute designs that do just that.
-      I am also familiar with HTML, CSS, JavaScript, and Python. I have worked on titles like Grooveyard (not yet released),
-      and many individual projects.
-    </p>
-  </div>
-</section>
+      <div class="row">
+        <p class="space-between">
+          Our group found the antlion unattractive and inappropriate for most audiences. We tried ideating to make the antlion cuter. Taking info from characters in The Legend of Zelda: Breath of the Wild, our character would have simpler shapes and more curves instead of sharp edges.
+        </p>
+        <img src="../img/zelda-ref.png" alt="Character in The Legend of Zelda: Breath of the Wild" class="space-between large-image">
+        <img src="../img/antlion-design.png" alt="Our Original Antlion Character Redesign" class="space-between large-image">
+      </div>
 
-<h2>Check out my work</h2>
-<section class="container">
-  <a class="nav-links" href="lamp.html">LAMP!: Character Design</a>
-</section>
-<section class="container">
-  <a class="nav-links" href="grooveyard.html">Grooveyard: Tileset</a>
-</section>
+      <div class="row">
+        <p class="space-between">
+          When we decided to code an endless obstacle-dodging game, the team felt that an antlion was too obscure and wanted to change our main character to be a more recognizable insect.
+        </p>
+        <img src="../img/moththew-1.png" alt="Our Original Moth-thew Character Design" class="space-between large-image">
+        <p class="space-between">
+          At the time, Vancouver was experiencing a whole horde of moths. We decided to be topical and make our character a moth. This is how ‘Moth-thew’ came to be. In this stage, the moth was a tad too simple. But I got what I was looking for, the colour scheme and general shape was well-received. I was told to add a pattern, so I did and sent it to the team for feedback.
+        </p>
+      </div>
 
-<footer>
-  <div class="footer-column">
-    <h3>Resources</h3>
-    <a href="styleguide.html" class="active-link">Style Guide</a>
-    <a href="https://github.com/givemethecodo/Project-3-Portfolio" class="active-link">Github</a>
-    <a href="references.html" class="active-link">References</a>
-  </div>
-</footer>
+      <div class="row">
+        <img src="../img/moth-model-1.png" alt="Our Updated Moth-thew Character Design" class="space-between large-image">
+        <p class="space-between">
+          For this final design, I brought back the use of rounded shapes to make the character shape language as clearly friendly as possible: most notably, I rounded out the body fur. The pointed antennae are to give the character a more distinct silhouette. Finally the pattern was used to break up the monotony of a singular colour and differentiate Moth-thew from being perceived as a butterfly. This was the design used for the final.
+        </p>
+        <img src="../img/player-damage.png" alt="Our Updated Moth-thew Character Design taking damage" class="space-between large-image">
+      </div>
+
+      <div class="row">
+        <p class="space-between">
+          Shape language and silhouette are two of the most pivotal parts in character design. By keeping these concepts in mind, I created a friendly-looking insect with a cheerful colour palette that contrasts against the blue background of our game.
+        </p>
+        <img src="../img/finalized-moth-animation.png" alt="Moth-thew sprites for animation" class="space-between large-image">
+        <img src="../img/level-one-with-bg-features.png" alt="Our level design" class="space-between large-image">
+      </div>
+    </section>
+
+    <div class="projects-container">
+      <div class="projects-container-row">
+        <h1>check out my project work</h1>
+      </div>
+      <div class="projects-container-row">
+        <div class="figure">
+          <a href="lamp.html">
+            <img class="image-main projects-container-item" src="../img/lamp-tile.png" srcset="../img/lamp-tile.png" alt="LAMP!: Character Design">
+            <img class="image-hover projects-container-item" src="../img/lamp-tile-hover.png" srcset="../img/lamp-tile-hover.png" alt="LAMP!: Character Design on hover">
+          </a>
+        </div>
+        <div class="figure">
+          <a href="grooveyard.html">
+            <img class="image-main projects-container-item" src="../img/grooveyard-tile.png" srcset="../img/grooveyard-tile.png" alt="Grooveyard: Tileset">
+            <img class="image-hover projects-container-item" src="../img/grooveyard-tile-hover.png" srcset="../img/grooveyard-tile-hover.png" alt="Grooveyard: Tileset on hover">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+  <footer>
+    <div class="footer">
+      <a href="https://www.instagram.com/qootea/" class="active-link">instagram</a>
+      <a href="https://qootea.itch.io/" class="active-link">itch.io</a>
+      <a href="https://github.com/givemethecodo/Project-3-Portfolio" class="active-link">github</a>
+      <a href="styleguide.html" class="active-link">style guide</a>
+      <a href="references.html" class="active-link">references</a>
+    </div>
+  </footer>
+
 </body>

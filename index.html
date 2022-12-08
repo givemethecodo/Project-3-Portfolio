@@ -7,42 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erika Hance | Home</title>
 
-    <link href="../css/main.css" rel="stylesheet">
-    <script src="../scripts/main.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+    <script src="scripts/main.js"></script>
 
   </head>
 
 <body>
 
-    <nav>
-      <div class="navbar">
-          <a class="nav-links" href="index.html">Home</a>
-          <a class="nav-links" href="pages/about.html">About</a>
-          <!-- <a class="nav-links" href="pages/projects.html">Projects</a> -->
+  <nav>
+    <div class="navbar">
+        <a class="nav-links" href="index.html"><img class="logo" src="img/logo.png" alt="Erika Hance Portfolio Logo"></a>
+        <a class="nav-links" href="pages/about.html">about</a>
+        <div class="subnav">
+          <!-- ref: https://www.sitepoint.com/community/t/skip-navigation-problem-with-tabbing/214274/6 -->
+          <!-- ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex -->
+          <a class="nav-links subnavbtn" tabindex="0">projects <i class="fa fa-caret-down"></i></a>
+            <div class="subnav-content">
+              <a class="nav-links" href="pages/lamp.html">LAMP!: character design</a>
+              <a class="nav-links" href="pages/grooveyard.html">Grooveyard: tileset creation</a>
+            </div>
+        </div>
+        <a class="nav-links" href="pages/gallery.html">gallery</a>
+    </div>
+  </nav>
+
+  <article>
+
+    <img class="whole-page-content" src="img/splash.gif" alt="Landing page gif depicting logo animation and the words 'erika hance' 'illustration' 'art' and 'design'">
+
+
+    <div class="projects-container">
+      <div class="projects-container-row">
+        <h1>check out my project work</h1>
       </div>
-    </nav>
+      <div class="projects-container-row">
+        <div class="figure">
+          <a href="pages/lamp.html">
+            <img class="image-main projects-container-item" src="img/lamp-tile.png" srcset="img/lamp-tile.png" alt="LAMP!: Character Design">
+            <img class="image-hover projects-container-item" src="img/lamp-tile-hover.png" srcset="img/lamp-tile-hover.png" alt="LAMP!: Character Design on hover">
+          </a>
+        </div>
+        <div class="figure">
+          <a href="pages/grooveyard.html">
+            <img class="image-main projects-container-item" src="img/grooveyard-tile.png" srcset="img/grooveyard-tile.png" alt="Grooveyard: Tileset">
+            <img class="image-hover projects-container-item" src="img/grooveyard-tile-hover.png" srcset="img/grooveyard-tile-hover.png" alt="Grooveyard: Tileset on hover">
+          </a>
+        </div>
+      </div>
+    </div>
 
-<section class="container">
-  <div class="space-ontop">
-    <h1>Illustrator and Game Artist</h1>
-    <p>based in Vancouver, British Columbia</p>
-  </div>
-</section>
+  </article>
 
-<h2>Check out my work</h2>
-<section class="container">
-  <a class="nav-links" href="pages/lamp.html">LAMP!: Character Design</a>
-</section>
-<section class="container">
-  <a class="nav-links" href="pages/grooveyard.html">Grooveyard: Tileset</a>
-</section>
+  <footer>
+    <div class="footer">
+      <a href="https://www.instagram.com/qootea/" class="active-link">instagram</a>
+      <a href="https://qootea.itch.io/" class="active-link">itch.io</a>
+      <a href="https://github.com/givemethecodo/Project-3-Portfolio" class="active-link">github</a>
+      <a href="pages/styleguide.html" class="active-link">style guide</a>
+      <a href="pages/references.html" class="active-link">references</a>
+    </div>
+  </footer>
 
-<footer>
-  <div class="footer-column">
-    <h3>Resources</h3>
-    <a href="pages/styleguide.html" class="active-link">Style Guide</a>
-    <a href="https://github.com/givemethecodo/Project-3-Portfolio" class="active-link">Github</a>
-    <a href="pages/references.html" class="active-link">References</a>
-  </div>
-</footer>
 </body>

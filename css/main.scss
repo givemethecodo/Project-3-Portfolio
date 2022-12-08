@@ -1,0 +1,367 @@
+// <---OFFICIAL COLORS---> //////////////////////////////////////////////////////////////////
+$black: #0E0E0E; //used for background-color
+$white: #FFFFFF; //used for text
+$yellow: #EAB651;
+$blue: #2789C8;
+$red: #AD2D5E;
+$transparent: rgba(0,0,0,0);
+$transparent-white: rgba(255,255,255,50%);
+$transparent-black: rgba(0,0,0,50%);
+$transparent-yellow: rgba(234,182,81,50%);
+$transparent-blue: rgba(39,137,200,50%);
+$transparent-red: rgba(173,45,94,50%);
+//ref: https://www.w3schools.com/css/css_padding.asp
+//note to self: top right bottom left
+
+// <---ADDITIONAL FONT(S)---> //////////////////////////////////////////////////////////////////
+// ref: https://fonts.google.com/specimen/Hammersmith+One/about
+// ref: https://www.w3schools.com/css/css3_fonts.asp
+@font-face {
+    font-family: 'HammersmithOne';
+    src: url(../fonts/HammersmithOne-Regular.ttf);
+}
+
+// <---PAGE SETUP---> //////////////////////////////////////////////////////////////////
+body {
+  background-color: $black;
+  color: $white;
+  font-family: 'HammersmithOne';
+  font-size: 1rem;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  flex: 1;
+}
+
+.article {
+  flex: 1;
+}
+
+.space-ontop {
+    margin-top: 3em;
+}
+
+.container {
+  margin: 1rem;
+  padding: 4rem;
+  display: flex;
+
+  border: medium $transparent-white solid;
+  border-radius: 1rem;
+}
+
+.container-small {
+  margin: 1rem;
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+
+/* for computer/laptop */
+@media (min-width:961px)  {
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: medium $transparent-white solid;
+  }
+  .container .about-para {
+    padding: 2rem;
+  }
+  .large-image {
+    max-width: 14rem;
+    max-height: 12rem;
+    border-radius: 1rem;
+  }
+}
+
+/* for mobile */
+@media (max-width:961px)  {
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: medium $transparent-white solid;
+  }
+  .large-image {
+    flex-grow: 1;
+    max-width: 60vw;
+    border-radius: 1rem;
+    max-height: 17rem;
+  }
+}
+
+.header {
+  width: 80vw;
+}
+
+
+.container img {
+  align-self: baseline;
+}
+
+
+.med-image {
+  width: 60vw;
+  max-width: 20rem;
+}
+
+p {
+  font-family: 'Calibri';
+  font-size: 1rem;
+}
+
+.space-between {
+  margin: 2rem;
+}
+
+/*got this from here: https://www.w3schools.com/HOWTO/howto_css_center-vertical.asp*/
+.center-vertical {
+    justify-content: center;
+    align-items: center;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+// <---NAVBAR---> //////////////////////////////////////////////////////////////////
+// ref: https://www.w3schools.com/howto/howto_css_subnav.asp
+
+nav {
+  border-bottom: medium $transparent solid;
+}
+
+nav:hover {
+  // background-color: $transparent-red;
+  transition-duration: 1s;
+  border-bottom: medium $transparent-white solid;
+}
+
+.navbar {
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0.5rem 0;
+}
+
+.logo {
+  max-width: 3rem;
+}
+
+
+// ref: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+.navbar a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
+  border-width: medium;
+  border-radius: 0.2rem;
+  border-color: $transparent;
+  border-style: solid;
+  background-color: $transparent;
+  color: $white;
+  padding: 0.5rem 0.9rem;
+}
+
+.subnav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  border-width: medium;
+  border-color: $yellow;
+  border-style: solid;
+  color: $yellow;
+  border-radius: 40rem;
+  transition-duration: 0.5s;
+  padding: 0.3rem 0.7rem;
+  margin: 0.2rem 0.2rem;
+}
+
+.subnav-content {
+  display: none;
+  top: 5rem;
+  position: absolute; // note to self, this is important (not relative)
+  z-index: 100;
+  text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.subnav-content a {
+  background-color: $transparent-black;
+  border-radius: 40rem;
+}
+
+// <---INDEX CONTENT---> //////////////////////////////////////////////////////////////////
+.whole-page-content {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  // ref: https://css-tricks.com/scrollbar-reflowing/
+  // using percentage because vw doesn't take into account scrollbar and causes overflow
+  width: 100%;
+}
+
+// <---REOCCURING PROJECTS CONTAINER---> //////////////////////////////////////////////////////////////////
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  border: medium $blue solid;
+  border-radius: 1rem;
+  color: $white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.projects-container:hover {
+  background-color: $transparent-blue;
+  color: $transparent-blue;
+  transition-duration: 1s;
+}
+
+.projects-container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projects-container-item {
+  max-width: 45vw;
+  border: medium $transparent solid;
+}
+
+.projects-container-item:hover {
+  border: medium $yellow solid;
+}
+
+.projects-container img {
+  border-radius: 1rem;
+  min-width: 10vw;
+}
+
+// ref: https://sirv.com/help/articles/hover-change-image/
+.figure {
+  position: relative;
+  max-width: 100%;
+}
+.figure img.image-hover {
+  position: absolute;
+  top: -0;
+  right: 0;
+  left: -0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.figure:hover img.image-hover {
+  opacity: 1;
+  border-radius: 1rem;
+  transition-duration: 1s;
+}
+
+// <---FOOTER---> //////////////////////////////////////////////////////////////////
+// ref: https:stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
+/* for computer/laptop */
+@media (min-width:961px)  {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+    // background-color: $black;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* for mobile */
+@media (max-width:961px)  {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+    // background-color: $black;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+footer {
+  border-top: medium $transparent solid;
+}
+
+footer:hover {
+  // background-color: $transparent-red;
+  transition-duration: 1s;
+  border-top: medium $transparent-white solid;
+}
+
+.footer a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
+  border-width: medium;
+  border-radius: 0.2rem;
+  border-color: $transparent;
+  border-style: solid;
+  background-color: $transparent;
+  color: $white;
+  padding: 0.5rem 0.9rem;
+}
+
+.footer a:hover {
+  border-width: medium;
+  border-color: $yellow;
+  border-style: solid;
+  color: $yellow;
+  border-radius: 40rem;
+  transition-duration: 0.5s;
+  padding: 0.3rem 0.7rem;
+  margin: 0.2rem 0.2rem;
+}
